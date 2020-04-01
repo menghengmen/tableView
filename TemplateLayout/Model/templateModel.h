@@ -18,7 +18,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSString *time;
 @property (nonatomic, copy, readonly) NSString *imageName;
 
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+/**
+ 获取数据模型数组
+ 
+ @param fileName 文件名
+ @return  数据模型数组
+ */
++ (NSArray *)getData:(NSString *)fileName;
+
 
 @end
 

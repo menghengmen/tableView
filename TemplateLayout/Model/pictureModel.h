@@ -7,14 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MJExtension/MJExtension.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class locationModel;
 @interface pictureModel : NSObject
 @property   (nonatomic,copy)  NSString* confidence;
 @property   (nonatomic,copy)  NSString* language;
 @property   (nonatomic,copy)  NSString* Text;
 @property   (nonatomic,strong)   NSArray *coords;
+/**
+ 获取数据模型数组
+ 
+ @param fileName 文件名
+ @return  数据模型数组
+ */
++ (NSArray *)getData:(NSString *)fileName;
+
 
 @end
 
@@ -23,5 +32,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property   (nonatomic,copy)  NSString* y;
 
 @end
+
 
 NS_ASSUME_NONNULL_END
