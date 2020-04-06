@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "MJExtension/MJExtension.h"
+@class locationModel;
+
 
 NS_ASSUME_NONNULL_BEGIN
-@class locationModel;
 @interface pictureModel : NSObject
 @property   (nonatomic,copy)  NSString* confidence;
 @property   (nonatomic,copy)  NSString* language;

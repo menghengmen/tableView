@@ -14,12 +14,49 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-    
+        UIView *view = [[UIView alloc] initWithFrame:self.bounds];
+        view.backgroundColor = [UIColor blackColor];
+        view.alpha = 0.5f;
+        view.userInteractionEnabled = true;
+        [view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
+        self.backgroundView = view;
+        [self addSubview:view];
+        
+        self.resultIsOn =true;
     }
     
     return  self;
 }
- //Only override drawRect: if you perform custom drawing.
+ 
+-(void)tap:(UITapGestureRecognizer*)gesture{
+    self.resultIsOn = !self.resultIsOn;
+    
+}
+
+-(void)setResultIsOn:(BOOL)resultIsOn{
+    _resultIsOn = resultIsOn;
+    if (resultIsOn ==true) {
+        [self show];
+    } else {
+        [self display];
+    }
+    
+}
+
+-(void)show{
+    [UIView animateWithDuration:0.5f animations:^{
+        self.backgroundView.alpha = 0.5f;
+    }];
+}
+
+-(void)display{
+    [UIView animateWithDuration:0.5f animations:^{
+           self.backgroundView.alpha = 0.1f;
+    }];
+}
+
+
+//Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
        CGContextRef ctx = UIGraphicsGetCurrentContext();

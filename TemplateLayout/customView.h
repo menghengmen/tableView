@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface customView : UIView
 -(instancetype)initWithFrame:(CGRect)frame withData:(NSMutableArray*)dataArr;
+@property (nonatomic,strong)  UIView *backgroundView; //背景
+@property (nonatomic,assign)  BOOL resultIsOn; // 是否展示识别结果
+
 
 @end
 
