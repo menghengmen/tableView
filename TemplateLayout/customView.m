@@ -63,9 +63,15 @@
        
        CGContextAddRect(ctx, CGRectMake(10, 10+64, 150, 100));
        
-       [[UIColor colorWithRed:1.0 green:0 blue:0 alpha:1.0] set];
+       [[UIColor colorWithRed:0 green:1 blue:0 alpha:1.0] set];
        
        CGContextStrokePath(ctx);
+    
+    NSString *str = @"上海彼邻信息科技有限公司";
+    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+//    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:50];
+    [str drawInRect:CGRectMake(10, 74, 150, 100) withAttributes:attrs];
 }
 
 @end
