@@ -46,12 +46,13 @@
 -(void)show{
     [UIView animateWithDuration:0.5f animations:^{
         self.backgroundView.alpha = 0.5f;
+    
     }];
 }
 
 -(void)display{
     [UIView animateWithDuration:0.5f animations:^{
-           self.backgroundView.alpha = 0.1f;
+        self.backgroundView.alpha = 0.1f;
     }];
 }
 
@@ -72,6 +73,7 @@
     attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
 //    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:50];
     [str drawInRect:CGRectMake(10, 74, 150, 100) withAttributes:attrs];
+    self.scanStr = str;
 }
 
 @end

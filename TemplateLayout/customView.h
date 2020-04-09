@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(instancetype)initWithFrame:(CGRect)frame withData:(NSMutableArray*)dataArr;
 @property (nonatomic,strong)  UIView *backgroundView; //背景
 @property (nonatomic,assign)  BOOL resultIsOn; // 是否展示识别结果
+@property (nonatomic,strong)  NSString *scanStr;
 
 
 @end

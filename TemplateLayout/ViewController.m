@@ -61,7 +61,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self presentViewController:[pictureViewController new] animated:YES completion:nil];
+    [self.navigationController pushViewController:[pictureViewController new] animated:true];
 }
 
 

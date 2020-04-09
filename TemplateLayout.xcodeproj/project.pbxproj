@@ -24,8 +24,8 @@
 		B04CF9932434CADC002A7F7F /* customView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04CF9922434CADC002A7F7F /* customView.m */; };
 		B04CF9972434D72E002A7F7F /* pictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04CF9962434D72E002A7F7F /* pictureModel.m */; };
 		B04CF9EC2434D8C5002A7F7F /* addStoreIthatLetterModel.json in Resources */ = {isa = PBXBuildFile; fileRef = B04CF9EB2434D8C4002A7F7F /* addStoreIthatLetterModel.json */; };
-		B09923D3243B53E7000501B7 /* XYSidePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B09923D2243B53E7000501B7 /* XYSidePopView.m */; };
 		B09923D6243B543A000501B7 /* UIView+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B09923D5243B5439000501B7 /* UIView+SLExtension.m */; };
+		B09923D9243DF277000501B7 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B09923D8243DF277000501B7 /* TimerViewController.m */; };
 		C4EA7455297E535B4B928D9A /* Pods_TemplateLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64DB0EC5BC1D14B31E083E0 /* Pods_TemplateLayout.framework */; };
 		EEB57049BC6E453310A53573 /* Pods_TemplateLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621FE8A3A5691C0F34D4562A /* Pods_TemplateLayoutTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,10 +84,10 @@
 		B04CF9952434D72E002A7F7F /* pictureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pictureModel.h; sourceTree = "<group>"; };
 		B04CF9962434D72E002A7F7F /* pictureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pictureModel.m; sourceTree = "<group>"; };
 		B04CF9EB2434D8C4002A7F7F /* addStoreIthatLetterModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addStoreIthatLetterModel.json; sourceTree = "<group>"; };
-		B09923D1243B53E7000501B7 /* XYSidePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYSidePopView.h; sourceTree = "<group>"; };
-		B09923D2243B53E7000501B7 /* XYSidePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYSidePopView.m; sourceTree = "<group>"; };
 		B09923D4243B5439000501B7 /* UIView+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLExtension.h"; sourceTree = "<group>"; };
 		B09923D5243B5439000501B7 /* UIView+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLExtension.m"; sourceTree = "<group>"; };
+		B09923D7243DF277000501B7 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		B09923D8243DF277000501B7 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		C2917E581D669F94CDB49BEA /* Pods-TemplateLayout-TemplateLayoutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateLayout-TemplateLayoutUITests.release.xcconfig"; path = "Target Support Files/Pods-TemplateLayout-TemplateLayoutUITests/Pods-TemplateLayout-TemplateLayoutUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C47E306420FF474778532BFE /* Pods-TemplateLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateLayout.debug.xcconfig"; path = "Target Support Files/Pods-TemplateLayout/Pods-TemplateLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		F64DB0EC5BC1D14B31E083E0 /* Pods_TemplateLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,10 +180,10 @@
 				B04CF955242F96B8002A7F7F /* SceneDelegate.m */,
 				B04CF957242F96B8002A7F7F /* ViewController.h */,
 				B04CF958242F96B8002A7F7F /* ViewController.m */,
-				B09923D1243B53E7000501B7 /* XYSidePopView.h */,
-				B09923D2243B53E7000501B7 /* XYSidePopView.m */,
 				B04CF98E2434CA99002A7F7F /* pictureViewController.h */,
 				B04CF98F2434CA99002A7F7F /* pictureViewController.m */,
+				B09923D7243DF277000501B7 /* TimerViewController.h */,
+				B09923D8243DF277000501B7 /* TimerViewController.m */,
 				B04CF9912434CADC002A7F7F /* customView.h */,
 				B04CF9922434CADC002A7F7F /* customView.m */,
 				B04CF95A242F96B8002A7F7F /* Main.storyboard */,
@@ -448,10 +448,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09923D9243DF277000501B7 /* TimerViewController.m in Sources */,
 				B04CF9972434D72E002A7F7F /* pictureModel.m in Sources */,
 				B09923D6243B543A000501B7 /* UIView+SLExtension.m in Sources */,
 				B04CF988242F972A002A7F7F /* templateCell.m in Sources */,
-				B09923D3243B53E7000501B7 /* XYSidePopView.m in Sources */,
 				B04CF9902434CA99002A7F7F /* pictureViewController.m in Sources */,
 				B04CF98B242F9AB3002A7F7F /* templateModel.m in Sources */,
 				B04CF959242F96B8002A7F7F /* ViewController.m in Sources */,
