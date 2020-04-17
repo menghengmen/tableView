@@ -10,7 +10,7 @@
 
 @implementation customView
 
--(instancetype)initWithFrame:(CGRect)frame withData:(NSMutableArray *)dataArr{
+-(instancetype)initWithFrame:(CGRect)frame withData:(NSArray *)dataArr{
     self = [super initWithFrame:frame];
     
     if (self) {
@@ -21,7 +21,7 @@
         [view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
         self.backgroundView = view;
         [self addSubview:view];
-        
+        self.dataArray = dataArr;
         self.resultIsOn =true;
     }
     
@@ -68,7 +68,7 @@
        
        CGContextStrokePath(ctx);
     
-    NSString *str = @"上海彼邻信息科技有限公司";
+    NSString *str = self.dataArray[0] ;
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
 //    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:50];

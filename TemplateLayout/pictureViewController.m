@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    customView *view = [[customView alloc] initWithFrame:self.view.bounds withData:@[@"1"]];
+    customView *view = [[customView alloc] initWithFrame:self.view.bounds withData:@[@"上海比邻信息科技有限公司"]];
     view.backgroundColor = [UIColor whiteColor];
     self.view = view;
 
@@ -43,7 +43,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[TimerViewController new] animated:true];
+   // [self.navigationController pushViewController:[TimerViewController new] animated:true];
 }
 
 
