@@ -13,6 +13,7 @@ target 'TemplateLayout' do
   pod 'Realm'
    pod 'YYKit'
    pod 'MJExtension'
+   pod 'Mastory'
   end
 
   target 'TemplateLayoutUITests' do

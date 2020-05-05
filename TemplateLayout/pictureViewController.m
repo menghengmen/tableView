@@ -10,6 +10,7 @@
 #import "customView.h"
 #import "pictureModel.h"
 #import "TimerViewController.h"
+#import "ScrollViewController.h"
 
 
 @interface pictureViewController ()
@@ -43,7 +44,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-   // [self.navigationController pushViewController:[TimerViewController new] animated:true];
+    [self.navigationController pushViewController:[ScrollViewController new] animated:true];
 }
 
 
