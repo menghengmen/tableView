@@ -24,6 +24,11 @@
 		B04CF9932434CADC002A7F7F /* customView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04CF9922434CADC002A7F7F /* customView.m */; };
 		B04CF9972434D72E002A7F7F /* pictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04CF9962434D72E002A7F7F /* pictureModel.m */; };
 		B04CF9EC2434D8C5002A7F7F /* addStoreIthatLetterModel.json in Resources */ = {isa = PBXBuildFile; fileRef = B04CF9EB2434D8C4002A7F7F /* addStoreIthatLetterModel.json */; };
+		B086A4A024AE24CB003EFA6D /* SkinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086A49F24AE24CB003EFA6D /* SkinViewController.m */; };
+		B086A4A324AE25CE003EFA6D /* ChangeSkinListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B086A4A224AE25CE003EFA6D /* ChangeSkinListCell.m */; };
+		B086A4A724AE275F003EFA6D /* timg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B086A4A424AE275E003EFA6D /* timg.jpg */; };
+		B086A4A824AE275F003EFA6D /* timg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B086A4A524AE275E003EFA6D /* timg2.jpg */; };
+		B086A4A924AE275F003EFA6D /* timg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B086A4A624AE275E003EFA6D /* timg1.jpg */; };
 		B09923D6243B543A000501B7 /* UIView+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B09923D5243B5439000501B7 /* UIView+SLExtension.m */; };
 		B09923D9243DF277000501B7 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B09923D8243DF277000501B7 /* TimerViewController.m */; };
 		B0BC14B52461A760002F3218 /* ForumSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BC14B32461A75F002F3218 /* ForumSelectView.m */; };
@@ -98,6 +103,13 @@
 		B04CF9952434D72E002A7F7F /* pictureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pictureModel.h; sourceTree = "<group>"; };
 		B04CF9962434D72E002A7F7F /* pictureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pictureModel.m; sourceTree = "<group>"; };
 		B04CF9EB2434D8C4002A7F7F /* addStoreIthatLetterModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addStoreIthatLetterModel.json; sourceTree = "<group>"; };
+		B086A49E24AE24CB003EFA6D /* SkinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinViewController.h; sourceTree = "<group>"; };
+		B086A49F24AE24CB003EFA6D /* SkinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinViewController.m; sourceTree = "<group>"; };
+		B086A4A124AE25CD003EFA6D /* ChangeSkinListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeSkinListCell.h; sourceTree = "<group>"; };
+		B086A4A224AE25CE003EFA6D /* ChangeSkinListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeSkinListCell.m; sourceTree = "<group>"; };
+		B086A4A424AE275E003EFA6D /* timg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpg; sourceTree = "<group>"; };
+		B086A4A524AE275E003EFA6D /* timg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg2.jpg; sourceTree = "<group>"; };
+		B086A4A624AE275E003EFA6D /* timg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg1.jpg; sourceTree = "<group>"; };
 		B09923D4243B5439000501B7 /* UIView+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLExtension.h"; sourceTree = "<group>"; };
 		B09923D5243B5439000501B7 /* UIView+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLExtension.m"; sourceTree = "<group>"; };
 		B09923D7243DF277000501B7 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -198,6 +210,9 @@
 				B04CF9EB2434D8C4002A7F7F /* addStoreIthatLetterModel.json */,
 				B09923D4243B5439000501B7 /* UIView+SLExtension.h */,
 				B09923D5243B5439000501B7 /* UIView+SLExtension.m */,
+				B086A4A424AE275E003EFA6D /* timg.jpg */,
+				B086A4A624AE275E003EFA6D /* timg1.jpg */,
+				B086A4A524AE275E003EFA6D /* timg2.jpg */,
 				B04CF950242F96B8002A7F7F /* TemplateLayout */,
 				B04CF96C242F96BB002A7F7F /* TemplateLayoutTests */,
 				B04CF977242F96BB002A7F7F /* TemplateLayoutUITests */,
@@ -233,6 +248,10 @@
 				B0BC14E12461AA2A002F3218 /* ScrollViewController.m */,
 				B09923D7243DF277000501B7 /* TimerViewController.h */,
 				B09923D8243DF277000501B7 /* TimerViewController.m */,
+				B086A49E24AE24CB003EFA6D /* SkinViewController.h */,
+				B086A49F24AE24CB003EFA6D /* SkinViewController.m */,
+				B086A4A124AE25CD003EFA6D /* ChangeSkinListCell.h */,
+				B086A4A224AE25CE003EFA6D /* ChangeSkinListCell.m */,
 				B04CF9912434CADC002A7F7F /* customView.h */,
 				B04CF9922434CADC002A7F7F /* customView.m */,
 				B0BC14B62461A76D002F3218 /* ForumSelectView.h */,
@@ -422,9 +441,12 @@
 				B04CF961242F96BB002A7F7F /* LaunchScreen.storyboard in Resources */,
 				B04CF95E242F96BB002A7F7F /* Assets.xcassets in Resources */,
 				B0BC14DF2461A8B8002F3218 /* Info.plist in Resources */,
+				B086A4A824AE275F003EFA6D /* timg2.jpg in Resources */,
 				B04CF9EC2434D8C5002A7F7F /* addStoreIthatLetterModel.json in Resources */,
 				B04CF95C242F96B8002A7F7F /* Main.storyboard in Resources */,
 				B04CF98D242F9B6D002A7F7F /* data.json in Resources */,
+				B086A4A724AE275F003EFA6D /* timg.jpg in Resources */,
+				B086A4A924AE275F003EFA6D /* timg1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +573,9 @@
 				B04CF959242F96B8002A7F7F /* ViewController.m in Sources */,
 				B04CF953242F96B8002A7F7F /* AppDelegate.m in Sources */,
 				B0BC14E22461AA2A002F3218 /* ScrollViewController.m in Sources */,
+				B086A4A324AE25CE003EFA6D /* ChangeSkinListCell.m in Sources */,
 				B0BC14D52461A8B8002F3218 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B086A4A024AE24CB003EFA6D /* SkinViewController.m in Sources */,
 				B04CF9932434CADC002A7F7F /* customView.m in Sources */,
 				B0BC14D62461A8B8002F3218 /* ViewController+MASAdditions.m in Sources */,
 				B0BC14D72461A8B8002F3218 /* MASCompositeConstraint.m in Sources */,
