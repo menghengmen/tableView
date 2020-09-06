@@ -61,7 +61,7 @@
 
 - (UIImageView *)headView{
     if (!_headView) {
-        _headView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 153)];
+        _headView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 247)];
         _headView.contentMode = UIViewContentModeScaleAspectFill;
         _headView.clipsToBounds = YES;
         _headView.image = [UIImage imageNamed:@"ting.jpg"];

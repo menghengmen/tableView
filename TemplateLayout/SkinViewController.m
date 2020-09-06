@@ -34,7 +34,7 @@
 {
     ChangeSkinListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kChangeSkinCollectionViewCell forIndexPath:indexPath];
     SkinInfo *info = [[SkinInfo alloc] init];
-    info.head = @"timg.jpg";
+    info.head = @"timg2.jpg";
     [cell setCellContentWithSkinInfo:info];
     cell.delegate = self;
     return cell;
@@ -47,7 +47,7 @@
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         layout.minimumLineSpacing = 2;
         layout. minimumInteritemSpacing  = 2;
-        layout.itemSize = CGSizeMake((IOS_SCREEN_WIDTH - 6) / 3, 247);
+        layout.itemSize = CGSizeMake((IOS_SCREEN_WIDTH - 6) / 2, 247);
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, IOS_SCREEN_WIDTH, IOS_SCREEN_HEIGHT - 64) collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor whiteColor];
