@@ -14,6 +14,7 @@
 		B0ACD2E028391D5900BE4290 /* ReorderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2DA28391D5900BE4290 /* ReorderController.swift */; };
 		B0ACD2E128391D5900BE4290 /* ReorderController+AutoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2DB28391D5900BE4290 /* ReorderController+AutoScroll.swift */; };
 		B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */; };
+		B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */; };
 		B0B8FC382837E3C300EA1763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC372837E3C300EA1763 /* AppDelegate.swift */; };
 		B0B8FC3A2837E3C300EA1763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */; };
 		B0B8FC3C2837E3C300EA1763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC3B2837E3C300EA1763 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		B0ACD2DA28391D5900BE4290 /* ReorderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReorderController.swift; sourceTree = "<group>"; };
 		B0ACD2DB28391D5900BE4290 /* ReorderController+AutoScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReorderController+AutoScroll.swift"; sourceTree = "<group>"; };
 		B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCellViewController.swift; sourceTree = "<group>"; };
+		B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftQRCodeVC.swift; sourceTree = "<group>"; };
 		B0B8FC342837E3C300EA1763 /* mOVe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mOVe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8FC372837E3C300EA1763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */,
 				B0B8FC3B2837E3C300EA1763 /* ViewController.swift */,
 				B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */,
+				B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */,
 				B0B8FC4B2837E4A300EA1763 /* CustomTableViewCell.swift */,
 				B0B8FC4C2837E4A300EA1763 /* CustomTableViewCell.xib */,
 				B0B8FC3D2837E3C300EA1763 /* Main.storyboard */,
@@ -184,6 +187,7 @@
 				B0B8FC4D2837E4A300EA1763 /* CustomTableViewCell.swift in Sources */,
 				B0ACD2DD28391D5900BE4290 /* ReorderController+SnapshotView.swift in Sources */,
 				B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */,
+				B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */,
 				B0B8FC3A2837E3C300EA1763 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
