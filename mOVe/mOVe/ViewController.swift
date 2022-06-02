@@ -12,7 +12,7 @@ class ViewController: UIViewController,UITableViewDelegate,
 UITableViewDataSource,UIGestureRecognizerDelegate {
     
     var tableView:UITableView?
-    
+    var progressView: MHProgressView?
     var ctrlnames:[String] = ["UILabel 标签","UIButton 按钮","UIDatePiker 日期选择器",
                               "UITableView 表格视图"]
     
@@ -40,6 +40,14 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         longPress.minimumPressDuration = 1.0
         //将长按手势添加到需要实现长按操作的视图里
         self.tableView!.addGestureRecognizer(longPress)
+        
+        let view = MHProgressView(frame: CGRect(x: 40, y: 40, width: 200, height: 40))
+        view.progressStokeWidth = 1.0
+        view.progressBackgroundColor = .clear
+        view.progressColor = .clear
+        view.progressStokeBackgroundColor = .gray
+        self.progressView = view
+        self.view.addSubview(view)
     }
     
     //在本例中，只有一个分区
@@ -90,9 +98,10 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let moveVC = MoveCellViewController()
-        moveVC.modalPresentationStyle = .fullScreen
-        self.present(moveVC, animated: true, completion: nil)
+//        let moveVC = MoveCellViewController()
+//        moveVC.modalPresentationStyle = .fullScreen
+//        self.present(moveVC, animated: true, completion: nil)
+        self.progressView?.progress  += 0.1
     }
     
     //移动cell事件

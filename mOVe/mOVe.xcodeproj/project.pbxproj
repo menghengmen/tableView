@@ -15,10 +15,10 @@
 		B0ACD2E128391D5900BE4290 /* ReorderController+AutoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2DB28391D5900BE4290 /* ReorderController+AutoScroll.swift */; };
 		B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */; };
 		B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */; };
-		B0ACD2F1283FB40200BE4290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD2ED283FB40200BE4290 /* Assets.xcassets */; };
 		B0ACD2F2283FB40200BE4290 /* QRCode_ScanLine.png in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD2EE283FB40200BE4290 /* QRCode_ScanLine.png */; };
 		B0ACD2F3283FB40200BE4290 /* noticeMusic.caf in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD2EF283FB40200BE4290 /* noticeMusic.caf */; };
 		B0ACD2F4283FB40200BE4290 /* QRCode_ScanBox.png in Resources */ = {isa = PBXBuildFile; fileRef = B0ACD2F0283FB40200BE4290 /* QRCode_ScanBox.png */; };
+		B0ACD2F62849032C00BE4290 /* MHProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2F52849032C00BE4290 /* MHProgressView.swift */; };
 		B0B8FC382837E3C300EA1763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC372837E3C300EA1763 /* AppDelegate.swift */; };
 		B0B8FC3A2837E3C300EA1763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */; };
 		B0B8FC3C2837E3C300EA1763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC3B2837E3C300EA1763 /* ViewController.swift */; };
@@ -38,10 +38,10 @@
 		B0ACD2DB28391D5900BE4290 /* ReorderController+AutoScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReorderController+AutoScroll.swift"; sourceTree = "<group>"; };
 		B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCellViewController.swift; sourceTree = "<group>"; };
 		B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftQRCodeVC.swift; sourceTree = "<group>"; };
-		B0ACD2ED283FB40200BE4290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0ACD2EE283FB40200BE4290 /* QRCode_ScanLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode_ScanLine.png; sourceTree = "<group>"; };
 		B0ACD2EF283FB40200BE4290 /* noticeMusic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = noticeMusic.caf; sourceTree = "<group>"; };
 		B0ACD2F0283FB40200BE4290 /* QRCode_ScanBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode_ScanBox.png; sourceTree = "<group>"; };
+		B0ACD2F52849032C00BE4290 /* MHProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHProgressView.swift; sourceTree = "<group>"; };
 		B0B8FC342837E3C300EA1763 /* mOVe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mOVe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B8FC372837E3C300EA1763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +81,6 @@
 		B0ACD2EC283FB40200BE4290 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B0ACD2ED283FB40200BE4290 /* Assets.xcassets */,
 				B0ACD2EE283FB40200BE4290 /* QRCode_ScanLine.png */,
 				B0ACD2EF283FB40200BE4290 /* noticeMusic.caf */,
 				B0ACD2F0283FB40200BE4290 /* QRCode_ScanBox.png */,
@@ -112,6 +111,7 @@
 				B0B8FC372837E3C300EA1763 /* AppDelegate.swift */,
 				B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */,
 				B0B8FC3B2837E3C300EA1763 /* ViewController.swift */,
+				B0ACD2F52849032C00BE4290 /* MHProgressView.swift */,
 				B0ACD2E228391DFA00BE4290 /* MoveCellViewController.swift */,
 				B0ACD2EA283E5B3200BE4290 /* SwiftQRCodeVC.swift */,
 				B0B8FC4B2837E4A300EA1763 /* CustomTableViewCell.swift */,
@@ -190,7 +190,6 @@
 				B0ACD2F3283FB40200BE4290 /* noticeMusic.caf in Resources */,
 				B0B8FC4E2837E4A300EA1763 /* CustomTableViewCell.xib in Resources */,
 				B0B8FC3F2837E3C300EA1763 /* Main.storyboard in Resources */,
-				B0ACD2F1283FB40200BE4290 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +203,7 @@
 				B0ACD2E028391D5900BE4290 /* ReorderController.swift in Sources */,
 				B0ACD2E128391D5900BE4290 /* ReorderController+AutoScroll.swift in Sources */,
 				B0B8FC3C2837E3C300EA1763 /* ViewController.swift in Sources */,
+				B0ACD2F62849032C00BE4290 /* MHProgressView.swift in Sources */,
 				B0ACD2DE28391D5900BE4290 /* ReorderController+DestinationRow.swift in Sources */,
 				B0B8FC382837E3C300EA1763 /* AppDelegate.swift in Sources */,
 				B0ACD2DF28391D5900BE4290 /* UITableView+Reorder.swift in Sources */,
