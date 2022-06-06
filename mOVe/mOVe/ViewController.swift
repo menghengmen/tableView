@@ -101,7 +101,12 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
 //        let moveVC = MoveCellViewController()
 //        moveVC.modalPresentationStyle = .fullScreen
 //        self.present(moveVC, animated: true, completion: nil)
-        self.progressView?.progress  += 0.1
+        if self.progressView?.progress ?? 0 <= CGFloat(1.0) {
+            self.progressView?.progress  += 0.1
+
+        }
+        
+        
     }
     
     //移动cell事件

@@ -14,14 +14,12 @@ class MHProgressView: UIView {
     ///设置 进度
     var progress: CGFloat = 0 {
         didSet {
-           
-         
-            
             let margin = self.progressStokeWidth! +  1
             let marginWidth = self.bounds.size.width - 2 * margin
             let height = self.bounds.size.height - 2 * margin
             self.progrssView.frame = CGRect(x: margin, y: margin, width: marginWidth * progress, height: height )
             self.progrssView.backgroundColor = .blue
+            
         }
     
     }
