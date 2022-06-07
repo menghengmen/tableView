@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147CD284F91B000716F71 /* TimerViewController.swift */; };
+		B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D0284F920400716F71 /* MHCustomTimer.swift */; };
+		B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D2284F925A00716F71 /* MHSecondKillManager.swift */; };
 		B0ACD2DC28391D5900BE4290 /* ReorderController+GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2D628391D5900BE4290 /* ReorderController+GestureRecognizer.swift */; };
 		B0ACD2DD28391D5900BE4290 /* ReorderController+SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2D728391D5900BE4290 /* ReorderController+SnapshotView.swift */; };
 		B0ACD2DE28391D5900BE4290 /* ReorderController+DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACD2D828391D5900BE4290 /* ReorderController+DestinationRow.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B01147CD284F91B000716F71 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B01147D0284F920400716F71 /* MHCustomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCustomTimer.swift; sourceTree = "<group>"; };
+		B01147D2284F925A00716F71 /* MHSecondKillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSecondKillManager.swift; sourceTree = "<group>"; };
 		B0ACD2D628391D5900BE4290 /* ReorderController+GestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReorderController+GestureRecognizer.swift"; sourceTree = "<group>"; };
 		B0ACD2D728391D5900BE4290 /* ReorderController+SnapshotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReorderController+SnapshotView.swift"; sourceTree = "<group>"; };
 		B0ACD2D828391D5900BE4290 /* ReorderController+DestinationRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReorderController+DestinationRow.swift"; sourceTree = "<group>"; };
@@ -67,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B01147CF284F91C100716F71 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B01147CD284F91B000716F71 /* TimerViewController.swift */,
+				B01147D0284F920400716F71 /* MHCustomTimer.swift */,
+				B01147D2284F925A00716F71 /* MHSecondKillManager.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		B0ACD2D528391D4800BE4290 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 		B0B8FC362837E3C300EA1763 /* mOVe */ = {
 			isa = PBXGroup;
 			children = (
+				B01147CF284F91C100716F71 /* Timer */,
 				B0ACD2D528391D4800BE4290 /* Source */,
 				B0B8FC372837E3C300EA1763 /* AppDelegate.swift */,
 				B0B8FC392837E3C300EA1763 /* SceneDelegate.swift */,
@@ -213,10 +230,13 @@
 				B0ACD2DC28391D5900BE4290 /* ReorderController+GestureRecognizer.swift in Sources */,
 				B0B8FC4D2837E4A300EA1763 /* CustomTableViewCell.swift in Sources */,
 				B0ACD2DD28391D5900BE4290 /* ReorderController+SnapshotView.swift in Sources */,
+				B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */,
 				B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */,
 				B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */,
 				B0ACD2F8284E323400BE4290 /* AlamofireDemoVC.swift in Sources */,
 				B0B8FC3A2837E3C300EA1763 /* SceneDelegate.swift in Sources */,
+				B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */,
+				B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

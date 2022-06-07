@@ -98,12 +98,17 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let moveVC = MoveCellViewController()
-//        moveVC.modalPresentationStyle = .fullScreen
-//        self.present(moveVC, animated: true, completion: nil)
-        if self.progressView?.progress ?? 0 <= CGFloat(1.0) {
-            self.progressView?.progress  += 0.1
 
+        if indexPath.row == 3 { /// 秒杀倒计时
+            let moveVC = TimerViewController()
+            moveVC.modalPresentationStyle = .fullScreen
+            self.present(moveVC, animated: true, completion: nil)
+        } else {
+
+            if self.progressView?.progress ?? 0 <= CGFloat(1.0) {
+                self.progressView?.progress  += 0.1
+
+            }
         }
         
         
