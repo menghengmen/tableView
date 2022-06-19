@@ -14,7 +14,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     var tableView:UITableView?
     var progressView: MHProgressView?
     var ctrlnames:[String] = ["UILabel 标签","UIButton 按钮","UIDatePiker 日期选择器",
-                              "通讯录选择视图"]
+                              "通讯录选择视图","123"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +105,10 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
             self.present(moveVC, animated: true, completion: nil)
         } else if (indexPath.row == 3){
             let selectVC = ContactSelectController()
+            selectVC.modalPresentationStyle = .fullScreen
+            self.present(selectVC, animated: true, completion: nil)
+        } else if (indexPath.row == 4){
+            let selectVC = LoadingButtonDemoVC()
             selectVC.modalPresentationStyle = .fullScreen
             self.present(selectVC, animated: true, completion: nil)
         } else {

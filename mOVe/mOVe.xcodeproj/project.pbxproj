@@ -32,6 +32,8 @@
 		B0B8FC442837E3C600EA1763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B8FC422837E3C600EA1763 /* LaunchScreen.storyboard */; };
 		B0B8FC4D2837E4A300EA1763 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B8FC4B2837E4A300EA1763 /* CustomTableViewCell.swift */; };
 		B0B8FC4E2837E4A300EA1763 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B8FC4C2837E4A300EA1763 /* CustomTableViewCell.xib */; };
+		B0E9BB0B285F625100A73F16 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E9BB0A285F625100A73F16 /* LoadingButton.swift */; };
+		B0E9BB0D285F62F200A73F16 /* LoadingButtonDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E9BB0C285F62F200A73F16 /* LoadingButtonDemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		B0B8FC452837E3C600EA1763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B8FC4B2837E4A300EA1763 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		B0B8FC4C2837E4A300EA1763 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		B0E9BB0A285F625100A73F16 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		B0E9BB0C285F62F200A73F16 /* LoadingButtonDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonDemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		B0B8FC362837E3C300EA1763 /* mOVe */ = {
 			isa = PBXGroup;
 			children = (
+				B0E9BB09285F623C00A73F16 /* LoadingButton */,
 				B08CA34828577FBB00936963 /* Contact */,
 				B01147CF284F91C100716F71 /* Timer */,
 				B0ACD2D528391D4800BE4290 /* Source */,
@@ -154,6 +159,15 @@
 				B0B8FC452837E3C600EA1763 /* Info.plist */,
 			);
 			path = mOVe;
+			sourceTree = "<group>";
+		};
+		B0E9BB09285F623C00A73F16 /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				B0E9BB0A285F625100A73F16 /* LoadingButton.swift */,
+				B0E9BB0C285F62F200A73F16 /* LoadingButtonDemoVC.swift */,
+			);
+			path = LoadingButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			files = (
 				B0ACD2E028391D5900BE4290 /* ReorderController.swift in Sources */,
 				B0ACD2E128391D5900BE4290 /* ReorderController+AutoScroll.swift in Sources */,
+				B0E9BB0B285F625100A73F16 /* LoadingButton.swift in Sources */,
 				B0B8FC3C2837E3C300EA1763 /* ViewController.swift in Sources */,
 				B0ACD2F62849032C00BE4290 /* MHProgressView.swift in Sources */,
 				B0ACD2DE28391D5900BE4290 /* ReorderController+DestinationRow.swift in Sources */,
@@ -242,6 +257,7 @@
 				B08CA34A28577FDC00936963 /* ContactSelectController.swift in Sources */,
 				B0B8FC4D2837E4A300EA1763 /* CustomTableViewCell.swift in Sources */,
 				B0ACD2DD28391D5900BE4290 /* ReorderController+SnapshotView.swift in Sources */,
+				B0E9BB0D285F62F200A73F16 /* LoadingButtonDemoVC.swift in Sources */,
 				B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */,
 				B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */,
 				B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */,
