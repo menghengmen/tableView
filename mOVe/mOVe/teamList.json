@@ -1,0 +1,14 @@
+{
+    "data": {
+        "clueTitle": "今日新增线索",
+        "clueContent": "0",
+        "visitTodayTitle": "今日拜访客户",
+        "visitTodayContent": "0",
+        "headTitle": "战队明细",
+        "titleOne": "队员姓名",
+        "titleTwo": "今日新增线索",
+        "titleThree": "今日拜访客户",
+        "listArr": [
+        ]
+    }
+}

@@ -102,6 +102,4 @@ public class LoadingButton: UIButton {
         activityIndicatorView.removeFromSuperview()
     }
     
-   
-    
 }

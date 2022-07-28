@@ -16,8 +16,47 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     var ctrlnames:[String] = ["UILabel 标签","UIButton 按钮","UIDatePiker 日期选择器",
                               "通讯录选择视图","123"]
     
+    // 匹配名字
+    func predicateName(name: String) -> Bool{
+       let predicateStr = "^("
+       let predicate =  NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
+        return predicate.evaluate(with: name)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // 读取本地plist文件
+        let path = Bundle.main.path(forResource: "addStoreIthatLetterModel", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        
+        do {
+                
+                let data = try Data(contentsOf: url)
+                let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
+                let jsonDict = jsonData as! NSDictionary
+            let title = jsonDict["title"]
+            let cusomtSectionView = jsonDict["cusomtSectionView"]
+            let footerHeight = jsonDict["footerHeight"]
+            
+            let contentArray = jsonDict["content"] as! Array<Any>
+            for contentDict  in contentArray{
+                print(contentDict)
+
+                let model = ProductModel()
+                model.nameRegex = (contentDict as! Dictionary<String, Any>) ["nameRegex"] as? String
+                model.title = (contentDict as! Dictionary<String, Any>) ["title"] as? String
+                model.cellClass = (contentDict as! Dictionary<String, Any>) ["cellClass"] as? String
+              }
+             let isTrue  = predicateName(name: "Otter")
+             print("\(isTrue)")
+                
+        } catch let error as Error? {
+                print("读取本地数据出现错误!",error)
+        }
+
+        
         
         //创建表视图
         self.tableView = UITableView(frame: self.view.frame,

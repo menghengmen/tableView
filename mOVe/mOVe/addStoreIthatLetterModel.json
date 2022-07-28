@@ -1,0 +1,58 @@
+
+  {
+    "title" : "其他凭证",
+    "cusomtSectionView" : "CRMAddStoreHeaderView",
+    "sectionHeight" : 62,
+    "cusomtFooterView" : "",
+    "footerHeight" : 10,
+    "subTitle" : "",
+    "content" : [
+                     {
+                        "title" : "凭证类型",
+                        "showNext" : false,
+                        "pushClass" : "",
+                        "input" : false,
+                        "cellClass" : "CRMAddStoreCredentialsChooseCell",
+                        "content" : "0",
+                        "cellSelector" : "switchCredentialsType:",
+                        "cellHeight" : 40,
+                        "nameRegex":"^",
+                        "performSelector" : ""
+                     },
+                     {
+                         "title" : "手持身份证照",
+                         "placeHoderText" : "",
+                         "showNext" : false,
+                         "showBottomLine" : true,
+                         "input" : false,
+                         "content" : "",
+                         "samplePicture" : "store_handIdCard_sample",
+                         "pushClass" : "",
+                         "cellClass" : "CRMAddStoreUploadPictureCell",
+                         "performSelector" : "",
+                         "cellSelector" : "choosePhoto:",
+                         "cellInsideEventBuriedPoint" : "StoreInformationPage_Input_Photo_HoldingIDCard",
+                         "keyBoardType" : 0,
+                         "nameRegex":"^()",
+
+                         "cellHeight" : 120
+                     },
+                     {
+                         "title" : "证明函(选填)",
+                         "placeHoderText" : "",
+                         "showNext" : false,
+                         "showBottomLine" : true,
+                         "input" : false,
+                         "content" : "",
+                         "samplePicture" : "home_thatLetter_sample",
+                         "pushClass" : "",
+                         "cellClass" : "CRMAddStoreUploadPictureCell",
+                         "performSelector" : "",
+                         "cellSelector" : "choosePhoto:",
+                         "cellInsideEventBuriedPoint" : "StoreInformationPage_Input_Photo_LetterOfProof",
+                         "keyBoardType" : 0,
+                         "cellHeight" : 120
+                     }
+                ]
+  }
+
