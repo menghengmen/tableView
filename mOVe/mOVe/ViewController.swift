@@ -23,10 +23,42 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         return predicate.evaluate(with: name)
     }
     
+
+    //数组转json
+    func getJSONStringFromArray(array:Array<Any>) -> String {
+           
+           if (!JSONSerialization.isValidJSONObject(array)) {
+               print("无法解析出JSONString")
+               return ""
+           }
+           
+        let data : NSData! = try? JSONSerialization.data(withJSONObject: array, options: []) as NSData?
+           let JSONString = NSString(data:data as Data,encoding: String.Encoding.utf8.rawValue)
+           return JSONString! as String
+           
+    }
+   
+    @objc func applicationDidBecomeActive(notification: NSNotification) {
+        let str = UIPasteboard.general.string
+        print("回来了粘贴板内容为\(str)")
+       }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+
         
+        var arr = Array<Any>()
+        for i in 0...3 {
+            let productMoel = ProductModel()
+            productMoel.nameRegex = "123"
+            productMoel.title = "哈哈"
+            arr.append(productMoel)
+        }
+        let jsonStr = getJSONStringFromArray(array: arr)
+        
+        return
         // 读取本地plist文件
         let path = Bundle.main.path(forResource: "addStoreIthatLetterModel", ofType: "json")
         let url = URL(fileURLWithPath: path!)
@@ -56,7 +88,6 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
                 print("读取本地数据出现错误!",error)
         }
 
-        
         
         //创建表视图
         self.tableView = UITableView(frame: self.view.frame,
