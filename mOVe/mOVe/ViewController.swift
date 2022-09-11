@@ -38,9 +38,10 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
            
     }
    
+    // 从其他应用回来
     @objc func applicationDidBecomeActive(notification: NSNotification) {
         let str = UIPasteboard.general.string
-        print("回来了粘贴板内容为\(str)")
+        print("其他应用复制的内容为\(str)")
        }
     
     override func viewDidLoad() {
