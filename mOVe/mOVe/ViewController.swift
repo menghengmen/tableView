@@ -49,6 +49,12 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
 
+        let millisecond = Date().milliStamp
+        print("当前毫秒级时间戳是 millisecond == ",millisecond)
+        let timestamp = Date().timestamp
+        print("当前秒级时间戳是 timestamp == ",timestamp)
+        
+        
         
         var arr = Array<Any>()
         for i in 0...3 {
