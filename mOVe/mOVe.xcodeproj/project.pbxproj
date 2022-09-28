@@ -10,6 +10,7 @@
 		B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147CD284F91B000716F71 /* TimerViewController.swift */; };
 		B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D0284F920400716F71 /* MHCustomTimer.swift */; };
 		B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D2284F925A00716F71 /* MHSecondKillManager.swift */; };
+		B082CB2E28E49D60002A331F /* Array+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B082CB2D28E49D60002A331F /* Array+Sort.swift */; };
 		B087BD1E2892C16F007FCB7B /* teamList.json in Resources */ = {isa = PBXBuildFile; fileRef = B087BD1D2892C16F007FCB7B /* teamList.json */; };
 		B087BD732892C410007FCB7B /* addStoreIthatLetterModel.json in Resources */ = {isa = PBXBuildFile; fileRef = B087BD722892C410007FCB7B /* addStoreIthatLetterModel.json */; };
 		B087BD762892D260007FCB7B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087BD752892D260007FCB7B /* ProductModel.swift */; };
@@ -44,6 +45,7 @@
 		B01147CD284F91B000716F71 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		B01147D0284F920400716F71 /* MHCustomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCustomTimer.swift; sourceTree = "<group>"; };
 		B01147D2284F925A00716F71 /* MHSecondKillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSecondKillManager.swift; sourceTree = "<group>"; };
+		B082CB2D28E49D60002A331F /* Array+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sort.swift"; sourceTree = "<group>"; };
 		B087BD1D2892C16F007FCB7B /* teamList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamList.json; sourceTree = "<group>"; };
 		B087BD722892C410007FCB7B /* addStoreIthatLetterModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addStoreIthatLetterModel.json; sourceTree = "<group>"; };
 		B087BD752892D260007FCB7B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				B0B8FC422837E3C600EA1763 /* LaunchScreen.storyboard */,
 				B0B8FC452837E3C600EA1763 /* Info.plist */,
 				B0F33CB328D742E300ED9E86 /* Date+extension.swift */,
+				B082CB2D28E49D60002A331F /* Array+Sort.swift */,
 			);
 			path = mOVe;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0ACD2E028391D5900BE4290 /* ReorderController.swift in Sources */,
+				B082CB2E28E49D60002A331F /* Array+Sort.swift in Sources */,
 				B0ACD2E128391D5900BE4290 /* ReorderController+AutoScroll.swift in Sources */,
 				B0E9BB0B285F625100A73F16 /* LoadingButton.swift in Sources */,
 				B0B8FC3C2837E3C300EA1763 /* ViewController.swift in Sources */,

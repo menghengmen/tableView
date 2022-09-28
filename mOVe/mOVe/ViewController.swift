@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController,UITableViewDelegate,
 UITableViewDataSource,UIGestureRecognizerDelegate {
     
@@ -44,6 +45,26 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         print("其他应用复制的内容为\(str)")
        }
     
+    // 判断数组是否升序
+    public func isSorted(arr:Array<Int>) ->Bool {
+        if arr.count <= 1 {
+            return true
+        }
+        var isBig = false
+        for i in 1...arr.count - 1  {
+            if arr[i - 1] < arr[i]{
+              isBig = true
+           } else {
+              isBig = false
+            }
+           
+        }
+        
+        return isBig
+    }
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,9 +76,14 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         print("当前秒级时间戳是 timestamp == ",timestamp)
         
         
+        // 判断数组是否升序
+        let arr1 = [0,11,22,33,44]
+        let isSorted = self.isSorted(arr: arr1)
+        
+        
         
         var arr = Array<Any>()
-        for i in 0...3 {
+         for i in 0...3 {
             let productMoel = ProductModel()
             productMoel.nameRegex = "123"
             productMoel.title = "哈哈"
