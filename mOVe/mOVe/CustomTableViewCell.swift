@@ -10,7 +10,18 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet var roomName: UILabel!
     @IBOutlet var numberEquipLabel: UILabel!
+    
+    var roomModel:MHRoomModel? {
+        didSet {
+            numberEquipLabel.text = "\(roomModel?.devList?.count ?? 0)个设备"
+            roomName.text = roomModel?.roomName
+        }
+        
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

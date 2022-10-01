@@ -77,7 +77,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         
         
         // 判断数组是否升序
-        let arr1 = [0,11,22,33,44]
+        let arr1 = Array<Int>()
         let isSorted = self.isSorted(arr: arr1)
         
         
@@ -89,37 +89,37 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
             productMoel.title = "哈哈"
             arr.append(productMoel)
         }
-        let jsonStr = getJSONStringFromArray(array: arr)
-        
-        return
-        // 读取本地plist文件
-        let path = Bundle.main.path(forResource: "addStoreIthatLetterModel", ofType: "json")
-        let url = URL(fileURLWithPath: path!)
-        
-        do {
-                
-                let data = try Data(contentsOf: url)
-                let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
-                let jsonDict = jsonData as! NSDictionary
-            let title = jsonDict["title"]
-            let cusomtSectionView = jsonDict["cusomtSectionView"]
-            let footerHeight = jsonDict["footerHeight"]
-            
-            let contentArray = jsonDict["content"] as! Array<Any>
-            for contentDict  in contentArray{
-                print(contentDict)
-
-                let model = ProductModel()
-                model.nameRegex = (contentDict as! Dictionary<String, Any>) ["nameRegex"] as? String
-                model.title = (contentDict as! Dictionary<String, Any>) ["title"] as? String
-                model.cellClass = (contentDict as! Dictionary<String, Any>) ["cellClass"] as? String
-              }
-             let isTrue  = predicateName(name: "Otter")
-             print("\(isTrue)")
-                
-        } catch let error as Error? {
-                print("读取本地数据出现错误!",error)
-        }
+//        let jsonStr = getJSONStringFromArray(array: arr)
+//
+//
+//        // 读取本地plist文件
+//        let path = Bundle.main.path(forResource: "addStoreIthatLetterModel", ofType: "json")
+//        let url = URL(fileURLWithPath: path!)
+//
+//        do {
+//
+//                let data = try Data(contentsOf: url)
+//                let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
+//                let jsonDict = jsonData as! NSDictionary
+//            let title = jsonDict["title"]
+//            let cusomtSectionView = jsonDict["cusomtSectionView"]
+//            let footerHeight = jsonDict["footerHeight"]
+//
+//            let contentArray = jsonDict["content"] as! Array<Any>
+//            for contentDict  in contentArray{
+//                print(contentDict)
+//
+//                let model = ProductModel()
+//                model.nameRegex = (contentDict as! Dictionary<String, Any>) ["nameRegex"] as? String
+//                model.title = (contentDict as! Dictionary<String, Any>) ["title"] as? String
+//                model.cellClass = (contentDict as! Dictionary<String, Any>) ["cellClass"] as? String
+//              }
+//             let isTrue  = predicateName(name: "Otter")
+//             print("\(isTrue)")
+//
+//        } catch let error as Error? {
+//                print("读取本地数据出现错误!",error)
+//        }
 
         
         //创建表视图
@@ -151,6 +151,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
         view.progressStokeBackgroundColor = .gray
         self.progressView = view
         self.view.addSubview(view)
+        self.view.addSubview(tableView!)
     }
     
     //在本例中，只有一个分区
@@ -199,28 +200,80 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    func configData()  -> Array<MHRoomModel>{
+          var roomList = Array<MHRoomModel>()
+        
+          let room1 = MHRoomModel()
+          room1.roomName = "卧室"
+          room1.sort = "3"
+          room1.devList = ["",""]
+          roomList.append(room1)
+          
+          
+          let room2 = MHRoomModel()
+          room2.roomName = "厨房"
+          room2.sort = "5"
+          room2.devList = [""]
+          roomList.append(room2)
+          
+        let room3 = MHRoomModel()
+        room3.roomName = "卫生间"
+        room3.sort = "8"
+        room3.devList = [""]
+        roomList.append(room3)
+          
+          
+          let room4 = MHRoomModel()
+          room4.roomName = "共享房间"
+          room4.sort = "share"
+          room4.devList = ["","","",""]
+          roomList.append(room4)
+        
+          // 根据reportSetting 排序
+          var sortedArr = Array<MHRoomModel>()// 排序后的数组
+        
+         let roomSetting = "10,13,32,5,3,8,share"
+         let sortArray = roomSetting.components(separatedBy: ",")
+         for sortItem in sortArray {
+            for originalRoom in roomList {
+                if sortItem == originalRoom.sort {
+                    sortedArr.append(originalRoom)
+                }
+                
+             }
+         }
+        
+        
+          return sortedArr
+          
+      }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        if indexPath.row == 2 { /// 秒杀倒计时
-            let moveVC = TimerViewController()
-            moveVC.modalPresentationStyle = .fullScreen
-            self.present(moveVC, animated: true, completion: nil)
-        } else if (indexPath.row == 3){
-            let selectVC = ContactSelectController()
-            selectVC.modalPresentationStyle = .fullScreen
-            self.present(selectVC, animated: true, completion: nil)
-        } else if (indexPath.row == 4){
-            let selectVC = LoadingButtonDemoVC()
-            selectVC.modalPresentationStyle = .fullScreen
-            self.present(selectVC, animated: true, completion: nil)
-        } else {
-
-            if self.progressView?.progress ?? 0 <= CGFloat(1.0) {
-                self.progressView?.progress  += 0.1
-
-            }
-        }
+         let moveVC = MoveCellViewController()
+        moveVC.roomList = configData()
+         moveVC.modalPresentationStyle = .fullScreen
+         self.present(moveVC, animated: true, completion: nil)
+        
+        
+//        if indexPath.row == 2 { /// 秒杀倒计时
+//            let moveVC = TimerViewController()
+//            moveVC.modalPresentationStyle = .fullScreen
+//            self.present(moveVC, animated: true, completion: nil)
+//        } else if (indexPath.row == 3){
+//            let selectVC = ContactSelectController()
+//            selectVC.modalPresentationStyle = .fullScreen
+//            self.present(selectVC, animated: true, completion: nil)
+//        } else if (indexPath.row == 4){
+//            let selectVC = LoadingButtonDemoVC()
+//            selectVC.modalPresentationStyle = .fullScreen
+//            self.present(selectVC, animated: true, completion: nil)
+//        } else {
+//
+//            if self.progressView?.progress ?? 0 <= CGFloat(1.0) {
+//                self.progressView?.progress  += 0.1
+//
+//            }
+//        }
         
         
     }

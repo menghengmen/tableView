@@ -62,6 +62,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="numberEquipLabel" destination="IfP-xh-zLC" id="EJt-VC-fE5"/>
+                <outlet property="roomName" destination="KZB-cO-xEe" id="J1j-QL-R7D"/>
             </connections>
             <point key="canvasLocation" x="190.57971014492756" y="122.20982142857142"/>
         </tableViewCell>

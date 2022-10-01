@@ -11,6 +11,7 @@
 		B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D0284F920400716F71 /* MHCustomTimer.swift */; };
 		B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D2284F925A00716F71 /* MHSecondKillManager.swift */; };
 		B082CB2E28E49D60002A331F /* Array+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B082CB2D28E49D60002A331F /* Array+Sort.swift */; };
+		B082CB3328E7D89C002A331F /* MHRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B082CB3228E7D89C002A331F /* MHRoomModel.swift */; };
 		B087BD1E2892C16F007FCB7B /* teamList.json in Resources */ = {isa = PBXBuildFile; fileRef = B087BD1D2892C16F007FCB7B /* teamList.json */; };
 		B087BD732892C410007FCB7B /* addStoreIthatLetterModel.json in Resources */ = {isa = PBXBuildFile; fileRef = B087BD722892C410007FCB7B /* addStoreIthatLetterModel.json */; };
 		B087BD762892D260007FCB7B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087BD752892D260007FCB7B /* ProductModel.swift */; };
@@ -46,6 +47,7 @@
 		B01147D0284F920400716F71 /* MHCustomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCustomTimer.swift; sourceTree = "<group>"; };
 		B01147D2284F925A00716F71 /* MHSecondKillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSecondKillManager.swift; sourceTree = "<group>"; };
 		B082CB2D28E49D60002A331F /* Array+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sort.swift"; sourceTree = "<group>"; };
+		B082CB3228E7D89C002A331F /* MHRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHRoomModel.swift; sourceTree = "<group>"; };
 		B087BD1D2892C16F007FCB7B /* teamList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamList.json; sourceTree = "<group>"; };
 		B087BD722892C410007FCB7B /* addStoreIthatLetterModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addStoreIthatLetterModel.json; sourceTree = "<group>"; };
 		B087BD752892D260007FCB7B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 				B01147D2284F925A00716F71 /* MHSecondKillManager.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		B082CB2F28E7D85F002A331F /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				B082CB3228E7D89C002A331F /* MHRoomModel.swift */,
+			);
+			path = Mode;
 			sourceTree = "<group>";
 		};
 		B087BD742892D1CE007FCB7B /* Json */ = {
@@ -159,6 +169,7 @@
 		B0B8FC362837E3C300EA1763 /* mOVe */ = {
 			isa = PBXGroup;
 			children = (
+				B082CB2F28E7D85F002A331F /* Mode */,
 				B087BD742892D1CE007FCB7B /* Json */,
 				B0E9BB09285F623C00A73F16 /* LoadingButton */,
 				B08CA34828577FBB00936963 /* Contact */,
@@ -285,6 +296,7 @@
 				B0B8FC4D2837E4A300EA1763 /* CustomTableViewCell.swift in Sources */,
 				B0ACD2DD28391D5900BE4290 /* ReorderController+SnapshotView.swift in Sources */,
 				B0E9BB0D285F62F200A73F16 /* LoadingButtonDemoVC.swift in Sources */,
+				B082CB3328E7D89C002A331F /* MHRoomModel.swift in Sources */,
 				B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */,
 				B0ACD2E328391DFA00BE4290 /* MoveCellViewController.swift in Sources */,
 				B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */,
