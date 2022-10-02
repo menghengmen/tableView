@@ -17,7 +17,6 @@ class MoveCellViewController: UITableViewController {
         super.viewDidLoad()
         
         
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.frame = CGRect(x: 20, y: 0, width: self.view.bounds.size.width - 40, height: self.view.bounds.size.height)
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "SwiftCell")
 
@@ -25,8 +24,33 @@ class MoveCellViewController: UITableViewController {
         tableView.reorder.delegate = self
         tableView.rowHeight = 100
         
-        
+        let selectBnt = UIButton(frame: CGRect(x: 10, y: 50, width: 100, height: 100));
+        selectBnt.setTitle("确定排序", for: .normal)
+        selectBnt.setTitleColor(.red, for: .normal)
+        selectBnt.addTarget(self, action:#selector(click(_:)), for:.touchUpInside)
+        view.addSubview(selectBnt)
     }
+    
+    /// 点击事件
+    @objc func click(_ button:UIButton){
+        
+        var sort = ""
+//        for room in roomList ?? [] {
+//            sort.append(",\(room.sort ?? "")")
+//        }
+        for i in 0...roomList!.count - 1 {
+            let room = roomList?[i]
+            if i == 0 {
+                sort.append("\(room?.sort ?? "")")
+            } else {
+                sort.append(",\(room?.sort ?? "")")
+
+            }
+        }
+        
+        let dict = ["sortSetting":sort]
+    }
+    
     
   
 

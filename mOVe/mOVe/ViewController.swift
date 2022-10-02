@@ -232,7 +232,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
           // 根据reportSetting 排序
           var sortedArr = Array<MHRoomModel>()// 排序后的数组
         
-         let roomSetting = "10,13,32,5,3,8,share"
+         let roomSetting = "share,10,13,32,5,3,8"
          let sortArray = roomSetting.components(separatedBy: ",")
          for sortItem in sortArray {
             for originalRoom in roomList {
@@ -242,9 +242,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
                 
              }
          }
-        
-        
-          return sortedArr
+        return sortedArr
           
       }
 
