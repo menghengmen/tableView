@@ -229,19 +229,37 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
           room4.devList = ["","","",""]
           roomList.append(room4)
         
+        let room5 = MHRoomModel()
+         room5.roomName = "个人"
+         room5.sort = "personal"
+         room5.devList = ["","","",""]
+         roomList.append(room5)
+        
           // 根据reportSetting 排序
           var sortedArr = Array<MHRoomModel>()// 排序后的数组
         
-         let roomSetting = "share,10,13,32,5,3,8"
-         let sortArray = roomSetting.components(separatedBy: ",")
-         for sortItem in sortArray {
+         let roomSetting = "share,personal,12,13,5,3,8"
+        
+         let sortArrayStr = roomSetting.components(separatedBy: ",")
+         for sortItem in sortArrayStr {
             for originalRoom in roomList {
                 if sortItem == originalRoom.sort {
                     sortedArr.append(originalRoom)
                 }
-                
+               
              }
          }
+
+       
+        
+        for originalRoom in roomList {
+            // room没有在sortSetting
+            if !sortArrayStr.contains(originalRoom.sort ?? "0") {
+                sortedArr.append(originalRoom)
+             }
+        }
+        
+        
         return sortedArr
           
       }
