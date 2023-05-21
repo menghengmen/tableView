@@ -16,12 +16,18 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
     var progressView: MHProgressView?
     var ctrlnames:[String] = ["UILabel 标签","UIButton 按钮","UIDatePiker 日期选择器",
                               "通讯录选择视图","123"]
+    // 绑定过Wechat的
+    var bindWechatDeviceArr: Array<MHDeviceModel>?
+    // 全部支持Wechat的设备
+    var allWechatDeviceArr: Array<MHDeviceModel>?
+    // 本账号连接过的蓝牙设备
+    var allConnectedDeviceArr: Array<MHDeviceModel>?
     
     // 匹配名字
     func predicateName(name: String) -> Bool{
        let predicateStr = "^("
        let predicate =  NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
-        return predicate.evaluate(with: name)
+       return predicate.evaluate(with: name)
     }
     
 
@@ -59,14 +65,48 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
             }
            
         }
-        
         return isBig
     }
     
-  
+  func configData() {
+       let device1 = MHDeviceModel()
+       device1.devId = "qwert65565"
+       device1.devName = "Earbuds 2SE"
+       allConnectedDeviceArr?.append(device1)
+   
+       let device2 = MHDeviceModel()
+       device2.devId = "qwert65565456"
+       device1.devName = "Earbuds 3pro"
+       allConnectedDeviceArr?.append(device1)
+       
+       let device3 = MHDeviceModel()
+       device3.devId = "qwert65565456"
+       device3.devName = "Earbuds 3pro"
+       device3.boundStatus = "1"// 已绑定
+       allWechatDeviceArr?.append(device1)
+       
+       let device4 = MHDeviceModel()
+       device4.devId = "qwert65565456"
+       device4.devName = "Airbuds"
+       device4.boundStatus = "0"// 未绑定
+       allWechatDeviceArr?.append(device4)
+    }
+
+       // 是否跳转
+       func isEnablePush() -> Bool {
+          var connectArrIds = Array<String>()
+          for connectModel in allConnectedDeviceArr ?? [MHDeviceModel]() {
+              connectArrIds.append(connectModel.devId ?? "")
+          }
+        
+           
+           return true
+       }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
 
@@ -266,7 +306,7 @@ UITableViewDataSource,UIGestureRecognizerDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          let moveVC = MoveCellViewController()
-        moveVC.roomList = configData()
+         moveVC.roomList = configData()
          moveVC.modalPresentationStyle = .fullScreen
          self.present(moveVC, animated: true, completion: nil)
         

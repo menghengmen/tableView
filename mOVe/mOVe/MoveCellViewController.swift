@@ -12,14 +12,12 @@ class MoveCellViewController: UITableViewController {
     var items = (1...10).map { "\($0)" }
     
     var roomList: Array<MHRoomModel>?
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         tableView.frame = CGRect(x: 20, y: 0, width: self.view.bounds.size.width - 40, height: self.view.bounds.size.height)
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "SwiftCell")
-
         tableView.allowsSelection = false
         tableView.reorder.delegate = self
         tableView.rowHeight = 100
@@ -30,6 +28,8 @@ class MoveCellViewController: UITableViewController {
         selectBnt.addTarget(self, action:#selector(click(_:)), for:.touchUpInside)
         view.addSubview(selectBnt)
     }
+    
+ 
     
     /// 点击事件
     @objc func click(_ button:UIButton){

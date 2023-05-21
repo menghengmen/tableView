@@ -10,6 +10,7 @@
 		B01147CE284F91B000716F71 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147CD284F91B000716F71 /* TimerViewController.swift */; };
 		B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D0284F920400716F71 /* MHCustomTimer.swift */; };
 		B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01147D2284F925A00716F71 /* MHSecondKillManager.swift */; };
+		B03E109229EC3D45001EB7BE /* MHDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03E109129EC3D45001EB7BE /* MHDeviceModel.swift */; };
 		B082CB2E28E49D60002A331F /* Array+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B082CB2D28E49D60002A331F /* Array+Sort.swift */; };
 		B082CB3328E7D89C002A331F /* MHRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B082CB3228E7D89C002A331F /* MHRoomModel.swift */; };
 		B087BD1E2892C16F007FCB7B /* teamList.json in Resources */ = {isa = PBXBuildFile; fileRef = B087BD1D2892C16F007FCB7B /* teamList.json */; };
@@ -46,6 +47,7 @@
 		B01147CD284F91B000716F71 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		B01147D0284F920400716F71 /* MHCustomTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHCustomTimer.swift; sourceTree = "<group>"; };
 		B01147D2284F925A00716F71 /* MHSecondKillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHSecondKillManager.swift; sourceTree = "<group>"; };
+		B03E109129EC3D45001EB7BE /* MHDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHDeviceModel.swift; sourceTree = "<group>"; };
 		B082CB2D28E49D60002A331F /* Array+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sort.swift"; sourceTree = "<group>"; };
 		B082CB3228E7D89C002A331F /* MHRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHRoomModel.swift; sourceTree = "<group>"; };
 		B087BD1D2892C16F007FCB7B /* teamList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamList.json; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				B082CB3228E7D89C002A331F /* MHRoomModel.swift */,
+				B03E109129EC3D45001EB7BE /* MHDeviceModel.swift */,
 			);
 			path = Mode;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				B0ACD2EB283E5B3200BE4290 /* SwiftQRCodeVC.swift in Sources */,
 				B0ACD2F8284E323400BE4290 /* AlamofireDemoVC.swift in Sources */,
 				B0B8FC3A2837E3C300EA1763 /* SceneDelegate.swift in Sources */,
+				B03E109229EC3D45001EB7BE /* MHDeviceModel.swift in Sources */,
 				B01147D3284F925A00716F71 /* MHSecondKillManager.swift in Sources */,
 				B087BD762892D260007FCB7B /* ProductModel.swift in Sources */,
 				B01147D1284F920400716F71 /* MHCustomTimer.swift in Sources */,
